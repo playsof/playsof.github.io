@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html ng-app="HelloQuiz">
+<head>
+  <title>Quiz on Operating System</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+
+<body class="container">  
+      <div class="row">
+          <div class="heading-section col-md-12 text-center" style="padding-top:30px">
+              <h2>Quiz on Operating System</h2>
+              <hr></hr>                        
+          </div> <!-- /.heading-section -->
+      </div>
+    
+  <table style="width:100%">
+    <tbody><tr>
+      <td style="width:70%;vertical-align:top">
+
+<!-- question 1 -->
+        <iquestion class="ng-isolate-scope" text=" Minimum RAM required for installation virtual box?::__a) 512MB;b) 440MB;c) 412MB;d) 1020MB"><div class="ng-binding" style="padding:15px 0px 5px 0px" ng-bind-html="qna[0].question"><b>Q.1: Minimum RAM required for installation virtual box?</b></div>
+    <!-- ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style=No"padding-left:10px" ng-repeat="option in qna[0].options">
+          <div class="radio">
+            <label>
+              <input class="ng-pristine ng-valid" name="q_1" value="a) 512MB" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+              <span class="ng-binding" style="">a) 512MB</span>
+            </label>
+          </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+          <div class="radio">
+            <label>
+              <input class="ng-pristine ng-valid" name="q_1" value="b) 440MB" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+              <span class="ng-binding" style="">b) 440MB</span>
+            </label>
+          </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+          <div class="radio">
+            <label>
+              <input class="ng-pristine ng-valid" name="q_1" value="c) 412MB" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+              <span class="ng-binding" style="">c) 412MB</span>
+            </label>
+          </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+          <div class="radio">
+            <label>
+               <input class="ng-pristine ng-valid" name="q_1" value="d) 1020MB" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">d) 1020MB</span>
+            </label>
+          </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+    </iquestion>
+<!-- question 1 -->
+
+<!-- question 2 -->
+    <iquestion class="ng-isolate-scope" text=" Which is the world's first operating system?::a) CP/M;__b) MS-DOS;c) IBM;d) LINUX"><div class="ng-binding" style="padding:15px 0px 5px 0px" ng-bind-html="qna[0].question"><b>Q.2: Which is the world's first operating system?</b></div>
+    <!-- ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+          <div class="radio">
+            <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="a) CP/M" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">a) CP/M</span>
+            </label>
+          </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+           <div class="radio">
+              <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="b) MS-DOS" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">b) MS-DOS</span>
+               </label>
+           </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+           <div class="radio">
+              <label>
+                <input class="ng-pristine ng-valid" name="q_2" value="c) IBM" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+                <span class="ng-binding" style="">c) IBM</span>
+             </label>
+           </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+           <div class="radio">
+             <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="d) LINUX" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">d) LINUX</span>
+            </label>
+           </div>
+       </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+   </iquestion>
+<!-- question 2 -->
+
+<!-- question 3 -->
+    <iquestion class="ng-isolate-scope" text="Can a 64-bit Operating system run on 32-bit Virtual box?::a) Yes;__b) No"><div class="ng-binding" style="padding:15px 0px 5px 0px" ng-bind-html="qna[0].question"><b>Q.3: Can a 64-bit Operating system run on 32-bit Virtual box?</b></div>
+    <!-- ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+          <div class="radio">
+            <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="a) Yes" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">a) Yes</span>
+            </label>
+          </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+           <div class="radio">
+              <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="b) • No" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">b) • No</span>
+               </label>
+           </div>
+        </div> 
+    <!-- ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+          <div class="radio">
+            <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="a) Yes" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">a) Yes</span>
+            </label>
+          </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+           <div class="radio">
+              <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="b) No" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">b) No</span>
+               </label>
+           </div>
+        </div>       
+   </iquestion>
+<!-- question 3 -->
+
+<!-- question 4 -->
+    <iquestion class="ng-isolate-scope" text="Is virtual box supported on Ubuntu?::__a) Yup;b) Nop; Ubantu is Nopt an OS; VirtualBox is made for mobile"><div class="ng-binding" style="padding:15px 0px 5px 0px" ng-bind-html="qna[0].question"><b>Q.4: Is virtual box supported on Ubuntu?</b></div>
+    <!-- ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+          <div class="radio">
+            <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="a) Yup" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">a) Yup</span>
+            </label>
+          </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+           <div class="radio">
+              <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="b) Nop" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">b) No</span>
+               </label>
+           </div>
+        </div> 
+    <!-- ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+          <div class="radio">
+            <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="c) Ubantu is not an OS" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">c) Ubantu is not an OS</span>
+            </label>
+          </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+           <div class="radio">
+              <label>
+               <input class="ng-pristine ng-valid" name="q_2" value=" d) VirtualBox is made for mobile" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">d) VirtualBox is made for mobile</span>
+               </label>
+           </div>
+        </div>       
+   </iquestion>
+<!-- question 4 -->
+
+<!-- question 5 -->
+    <iquestion class="ng-isolate-scope" text=" Which version of Android OS is supported by VirtualBox?::a) 6.0.1;b) 4.4.4;c) 5.0.0;__d) Does not support Android"><div class="ng-binding" style="padding:15px 0px 5px 0px" ng-bind-html="qna[0].question"><b>Q.2: Which version of Android OS is supported by VirtualBox?</b></div>
+    <!-- ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+          <div class="radio">
+            <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="a) 6.0.1" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">a) 6.0.1</span>
+            </label>
+          </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+           <div class="radio">
+              <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="b) 4.4.4" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">b) 4.4.4</span>
+               </label>
+           </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+           <div class="radio">
+              <label>
+                <input class="ng-pristine ng-valid" name="q_2" value="c) 5.0.0" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+                <span class="ng-binding" style="">c) 5.0.0</span>
+             </label>
+           </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+           <div class="radio">
+             <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="d) Does not support Android" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">d) Does not support Android</span>
+            </label>
+           </div>
+       </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+   </iquestion>
+<!-- question 5 -->
+
+<!-- question 6 -->
+    <iquestion class="ng-isolate-scope" text="With virtual box you can only install up to 3 other operating systems?::a) Right;__b) Wrong"><div class="ng-binding" style="padding:15px 0px 5px 0px" ng-bind-html="qna[0].question"><b>Q.6: With virtual box you can only install up to 3 other operating systems?</b></div>
+    <!-- ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+          <div class="radio">
+            <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="a) Right" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">a) Right</span>
+            </label>
+          </div>
+        </div>
+    <!-- end ngRepeat: option in qna[0].options -->
+        <div class="ng-scope" style="padding-left:10px" ng-repeat="option in qna[0].options">
+           <div class="radio">
+              <label>
+               <input class="ng-pristine ng-valid" name="q_2" value="b) Wrong" ng-model="qna[0].tag" ng-change="evalScore(qna[0].id, option.text)" type="radio">    
+               <span class="ng-binding" style="">b) Wrong</span>
+               </label>
+           </div>
+        </div>    
+   </iquestion>
+<!-- question  -->
+
+<!-- result -->
+  </td>
+  <td>
+    <iscorecard class="ng-isolate-scope"><div class="panel panel-primary">
+      <div class="panel-heading">
+         <h2 class="panel-title">Score Card</h2>
+      </div>
+      <div class="panel-body">  
+    <!--
+    <h5>Test complexity: <b>{{testComplexity}}</b></h5>
+    -->
+     <h5>
+       Total no. of questions: <b class="ng-binding">6</b>
+     </h5>
+     <h5>
+       No. of questions attempted: <b class="ng-binding">0</b>
+     </h5>
+     <div class="ng-hide" ng-show="showscores" style="padding-top:0px">
+        <h5>
+          No. of correct answers: <b class="ng-binding">0</b>
+        </h5>
+        <h5>
+          Overall score: <b class="ng-binding">0/2</b>
+        </h5>
+     </div>
+     <div style="padding-top:10px">
+       <input class="btn btn-sm btn-success" name="score" value="Show Score" ng-click="showScores()" type="button">
+       <input class="btn btn-sm btn-warning" name="rightanswer" value="Show Answers" ng-click="showAnswers()" type="button">
+     </div>
+     </div>
+     </div>
+    </iscorecard>
+  </td>
+<!-- result-->
+ </tr>
+</tbody></table> 
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular-sanitize.min.js"></script>
+  <script src="src/quizapp-v0.2.js"></script>
+  <script src="src/ui-bootstrap-tpls-0.9.0.min.js"></script>
+  <script>
+    angular.module( "HelloQuiz", ["QuizApp"]);
+  </script>
+</body>
+</html>
