@@ -1,1 +1,1389 @@
-Hello World
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Virtual Box - Tutorial</title>
+    	<meta name="description" content="how to use virtual box">
+        <meta name="viewport" content="width=device-width">
+<!-- 
+Flex Template 
+http://www.templatemo.com/tm-406-flex
+-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/templatemo_misc.css">
+        <link rel="stylesheet" href="css/templatemo_style.css">
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>          
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+
+        <div class="site-main" id="sTop">
+            <div class="site-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <ul class="social-icons">
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>                                
+                                <li><a href="#" class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div> <!-- /.col-md-12 -->
+                    </div> <!-- /.row -->
+                </div> <!-- /.container -->
+                <div class="main-header">
+                    <div class="container">
+                        <div id="menu-wrapper">
+                            <div class="row">
+                                <div class="logo-wrapper col-md-2 col-sm-2">
+                                    <h1>
+                                        <a href="#">VBox</a>
+                                    </h1>
+                                </div> <!-- /.logo-wrapper -->
+                                <div class="col-md-10 col-sm-10 main-menu text-right">
+                                    <div class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></div>
+                                    <ul class="menu-first">
+                                        <li class="active"><a href="#">Home</a></li>                                        
+                                        <li class="dropdown">
+                                            <a class="dropdown-toogle" data-toggle="dropdown" href="">Introduction</a><span class="caret"></span>
+                                            <ul class="dropdown-menu" role="menu" style="text-align: center; ">
+                                                <li><a href="#introduction-vb" style="line-height:10px">Introduction to VB</a></li>
+                                                <li><a href="#introduction-os" style="line-height:10px">Introduction to OS</a></li>
+                                            </ul>                                            
+                                        </li>                                       
+                                        <li class="dropdown">
+                                            <a class="dropdown-toogle" data-toggle="dropdown" href="">Install VB</a><span class="caret"></span>
+                                            <ul class="dropdown-menu" role="menu" style="text-align: center; ">
+                                                <li><a href="#download-vb" style="line-height:10px">Download VB</a></li>
+                                                <li><a href="#install-vb" style="line-height:10px">Install VB</a></li>
+                                                <li><a href="#vb-v-t" style="line-height:10px">Video Tutorial</a></li> 
+                                            </ul>                                            
+                                        </li>                               
+                                        <li class="dropdown">
+                                            <a class="dropdown-toogle" data-toggle="dropdown" href="">Install OS</a><span class="caret"></span>
+                                            <ul class="dropdown-menu" role="menu" style="text-align: center;">
+                                                <li><a href="#download-os" style="line-height:10px">Download OS</a></li>
+                                                <li><a href="#install-os" style="line-height:10px">Install OS</a></li>                                                  
+                                            </ul>                                            
+                                        </li>                                  
+                                        <li class="dropdown">
+                                            <a class="dropdown-toogle" data-toggle="dropdown" href="">Quiz</a><span class="caret"></span>
+                                            <ul class="dropdown-menu" role="menu" style="text-align: center;">
+                                                <li><a href="quiz-vb.html" target="blank" style="line-height:10px">Quiz on VB</a></li>
+                                                <li><a href="quiz-os.html" target="blank" style="line-height:10px">Quiz on OS</a></li>
+                                            </ul>                                            
+                                        </li>                                        
+                                        <li class="dropdown">
+                                            <a class="dropdown-toogle" data-toggle="dropdown" href="">Appendix</a><span class="caret"></span>
+                                            <ul class="dropdown-menu" role="menu" style="text-align: center;">
+                                                <li style="text-align: center"><a href="#our-team" style="line-height:10px;">Team</a></li>
+                                                <li><a href="#proof" style="line-height:10px;">Proof</a></li>
+                                                <li><a href="#external" style="line-height:10px;">External Link</a></li>
+                                                <li><a href="#refrences" style="line-height:10px;">Refrences</a></li>  
+                                                <li><a href="#contact" style="line-height:10px;">Contact</a></li>                                              
+                                            </ul>                                            
+                                        </li>                                        
+                                    </ul>                                    
+                                </div> <!-- /.main-menu -->
+                            </div> <!-- /.row -->
+                        </div> <!-- /#menu-wrapper -->                        
+                    </div> <!-- /.container -->
+                </div> <!-- /.main-header -->
+            </div> <!-- /.site-header -->
+            <div class="site-slider">
+                <div class="slider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="images/slide1.jpg" alt="">
+                                <div class="slider-caption visible-md visible-lg">
+                                    <h2>Free and Easy</h2>
+                                    <p>You can use in almost every PC</p>
+                                    <a href="#external" class="slider-btn">GET VIRTUAL BOX</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="images/slide2.jpg" alt="">
+                                <div class="slider-caption visible-md visible-lg">
+                                    <h2>Two os in same pc</h2>
+                                    <p>Use linux in windows and windows in linux</p>
+                                    <a href="#external" class="slider-btn">GET OPERATING SYSTEMS</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="images/slide3.jpg" alt="">
+                                <div class="slider-caption visible-md visible-lg">
+                                    <h2>Open source software</h2>
+                                    <p>Supported by large developer community</p>
+                                    <a href="#external" class="slider-btn">GO TO DEV FORUM</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- /.flexslider -->
+                </div> <!-- /.slider -->
+            </div> <!-- /.site-slider -->
+        </div> <!-- /.site-main -->
+
+<!-- Introdution of Virtual box -->
+        <div class="content-section" id="introduction-vb" style="margin-top:30px">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Introduction to VB</h2>
+                        <p>What is VirtualBox?, When, Where and by Whom Invented?</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->            
+            <div class="row">                
+                <div class="col-md-12 col-sm-12">                    
+                    <article style="text-align:justify"> 
+                        <p>
+                        <span style="padding-left:30px;"></span> Over the years virtual machines have played an integral part in the development of computer. Among them, Virtual Box provides good service as a leading virtualization machine.  Backed up by Oracle virtual box frequently releases better product with ever-growing list of features. 
+                        </p>
+                        <p>
+                        VirtualBox is a free, open source and clss-platform virtualization application. It can be run everywhere from small embedded system or desktop class machines all the way up to datacenter deployments and even cloud environments. It allows additional operating systems to be installed on an already existing operating system.
+                        </p>
+                        <p>
+                       As an open source virtualization application, virtual box was introduced by innotek GmbH in January of 2007. From the purchase of virtual box in 2008 by sun microsystems to later by oracle in 2010, virtual box has been constantly evolving into better virtual machine.  The suppoting operating system include Windows, Mac OS X, Solaris and Linux.
+                       </p></br>
+                        <p style="padding-left:30px;">The main feature of VirtualBox include :</p>
+                         <ul style="list-style:circle;padding-left:50px">
+                            <li>Running multiple Operating System simultaneously</li>
+                                <p style="padding-left:10px;">VirtualBox allows you to run mmore than one Operating System at a time.</p>
+                            <li>Easier software installation</li>
+                                <p style="padding-left:10px;">Software venders can use Virtual machine to ship entire software configurations.</p>
+                            <li>Testing and Disaster recovery</li>
+                                <p style="padding-left:10px;">Once install a Virtual machine and its virtual hard disks can be considered a containes that can be arbitrarily frozen, woken up, copied, backed up and transported between hosts.</p>
+                         </ul>                    
+                        </p></br>
+                        <p>
+                        <span style="padding-left:30px;"></span>The purpose of this page is to inform the people about uses of virtual box. This page also deals with the process of installation of the virtual box with screenshot and videos so as to make process easier for the new user. With a brief history along with the many features of the virtual box the.
+                        </p>
+                   </article>
+                </div> <!-- /.col-md-8 -->                
+            </div>
+        </div>
+<!-- Introdution of Virtual box -->
+
+<!-- Introdution of operating system  -->
+        <div class="content-section" id="introduction-os" style="margin-top:80px">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Introduction to OS</h2>
+                        <p>What is Operating System(OS)? Supported OS for VB.</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->            
+            <div class="row">                
+                <div class="col-md-12 col-sm-12">                    
+                    <p style="text-align:justify"> 
+                        <p><span style="padding-left:30px;"></span>An operating system (OS) is system software that runs on a computer. It manages the computer's memory and processes, as well as all of its software and hardware. The OS acts as a host for application programs that are run on the machine. As a host, one of the purposes of an OS is to handle the details of the operation of the hardware. This relieves application programs from having to manage these details and makes it easier to write applications. Almost all computers use an OS of some kind.</p>
+                        <p><span style="padding-left:30px;"></span>Computer operating systems perform basic tasks, such as recognizing input from the keyboard sending output to the display screen, keeping track of files and directories on the disk and controlling peripheral devices such as printers. For large systems, the operating system has even greater responsibilities and powers. It is like a traffic cop - it makes sure, that different programs and users running at the same time do not interfere with each other. The operating system is also responsible for security, ensuring that unauthorized users do not access the system.</p>
+                        <p><span style="padding-left:30px;"></span>Operating systems usually come pre-loaded on any computer you buy. Most people use the operating system that comes with their computer, but it's possible to upgrade or even change operating systems. The three most common operating systems for personal computers are Microsoft Windows, Mac OS X, and Linux.</p>
+                        <p><span style="padding-left:30px;"></span>Modern operating systems use a graphical user interface, or GUI. GUI is a program interface that takes advantage of the computer’s graphics capabilities to make the program easier to use. Each operating system's GUI has a different look and feel, so if you switch to a different operating system it may seem unfamiliar at first. However, modern operating systems are designed to be easy to use, and most of the basic principles are the same.</p>
+                        <p><span style="padding-left:30px;"></span>While there are many operating systems, Common contemporary OSs includes Microsoft Windows, Mac OS X, and Linux. Microsoft Windows has a significant majority of market share in the desktop and notebook computer markets, while the server and embedded device markets are split amongst several OSs.</p>
+          
+                    </p>
+                </div> <!-- /.col-md-8 -->                
+            </div>
+        </div>
+<!-- Introdution of operating system  -->
+
+<!-- /#vb-downloading-->
+        <div class="content-section" id="download-vb" style="padding-top:100px">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Downloading Virtual Box</h2>
+                        <p>Follow this guide to get right file</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                <div class="row">                
+                    <div class="portfolio-item col-md-6 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/picture1.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Virtual Box downloading page</h3>
+                                <p>Download link has been provided in home page of this web page as well. 
+                                </p> 
+                                <a href="images/gallery/picture1.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>                               
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-6 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/picture2.png" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Download Virtual Box </h3>
+                                <p>There are four different file for different Operating system. Please choose right file for your operating system. </p> 
+                                <a href="images/gallery/picture2.png" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>               
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->  
+            </div> <!-- /.container -->
+        </div> <!-- /#services -->
+<!-- /#vb-downloading-->
+
+<!-- /#vb-installation-->
+        <div class="content-section" id="install-vb" style="padding-top:100px">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Installing Virtual Box</h2>
+                        <p>You can install in any pc just follow us</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                <div class="row">               
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/picture3.png" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Installing Virtual Box</h3>
+                                <p>After completion of download go to the download folder and right click downloaded file then click open to begin installation.</p>
+                                <a href="images/gallery/picture3.png" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>                                   
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->  
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/picture4.png" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Click next</h3>
+                                <p>Now you dont need to do anything hard, just click next.</p>   
+                                <a href="images/gallery/picture4.png" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>                                
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->   
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/picture5.png" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Click next</h3>
+                                <p>Just click next.</p> 
+                                <a href="images/gallery/picture5.png" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>                                  
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/picture6.png" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Click next</h3>
+                                <p>Just click next.</p>
+                                <a href="images/gallery/picture6.png" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>                                   
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                       
+                </div> <!-- /.row -->
+                <div class="row">                   
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/picture7.png" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Click yes</h3>
+                                <p>Now you need to click yes.</p>
+                                <a href="images/gallery/picture7.png" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>   
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/picture8.png" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Click install</h3>
+                                <p>Now full installation of the software begain. It may ask for administration right just click ok/yes for that. Wait untill installation finished.</p>
+                                <a href="images/gallery/picture8.png" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>                                 
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                                        
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/picture9.png" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Click finish</h3>
+                                <p>Now installation of VirtualBox has been completed. Just click finish button to lunch VirtualBox.</p>
+                                <a href="images/gallery/picture9.png" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>   
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/picture10.png" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Virtual Box home page</h3>
+                                <p>Installation of virtual box has been completed successfully. Now you are ready to experiance power of VirtualBox.</p>
+                                <a href="images/gallery/picture10.png" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>   
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                           
+                </div> <!-- /.row -->                                    
+            </div> <!-- /.container -->
+        </div> <!-- /#services -->
+<!-- /#vb-installation-->
+
+<!-- /#vb-video-tutorial-->
+        <div class="content-section" id="vb-v-t" style="padding-top:100px">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Video tutorial</h2>
+                        <p>Follow this guide to get right file</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row --> 
+                <div class="portfolio-item col-md-12 col-sm-12">
+                        <div class="portfolio-thumb">
+                            <iframe width="1200" height="500" src="https://www.youtube.com/embed/avFf_vcseyk" frameborder="0" allowfullscreen></iframe> 
+                        </div> <!-- /.portfolio-thumb -->
+                </div> <!-- /.portfolio-item -->       
+            </div> <!-- /.container -->
+        </div> <!-- /#services -->
+<!-- /#vb-video-tutorial-->
+               
+<!-- /#OS-downloading-->
+        <div class="content-section" id="download-os" style="padding-top:100px">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Downloading Operating System</h2>
+                        <p>Follow this guide to get right file</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                <div class="row">                
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/pic1.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Virtual Box downloading page</h3>
+                                <p>Download link has been provided in home page of this web page as well. 
+                                </p> 
+                                <a href="images/gallery/pic1.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>                               
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/pic2.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Download Virtual Box </h3>
+                                <p>There are four different file for different Operating system. Please choose right file for your operating system. </p> 
+                                <a href="images/gallery/pic2.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>               
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->   
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/pic3.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Installing Virtual Box</h3>
+                                <p>After completion of download go to the download folder and right click downloaded file then click open to begin installation.</p>
+                                <a href="images/gallery/pic3.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>                                   
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->  
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/pic4.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Click next</h3>
+                                <p>Now you dont need to do anything hard, just click next.</p>   
+                                <a href="images/gallery/pic4.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>                                
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                         
+                </div> <!-- /.row -->        
+            </div> <!-- /.container -->
+        </div> <!-- /#services -->
+<!-- /#OS-downloading-->
+
+<!-- /#OS-installation-->   
+        <div class="content-section" id="install-os" style="margin-top:100px">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Installing OS</h2>
+                        <p>Installing kali Linux in windows</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image1.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image1.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image2.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image2.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image3.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image3.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->  
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image4.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image4.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                          
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image5.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image5.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image6.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image6.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image7.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image7.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image8.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image8.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                            
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image9.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image9.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image10.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image10.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image11.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image11.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->    
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image12.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image12.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                         
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image13.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image13.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image14.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image14.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image15.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image15.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->    
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image16.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image16.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                         
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image17.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image17.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image18.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image18.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image19.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image19.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->    
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image20.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image20.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                         
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image21.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image21.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image22.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image22.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image23.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image23.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->    
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image24.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image24.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                         
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image25.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image25.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image26.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image26.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image27.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image27.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->    
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image28.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image28.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                         
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image29.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image29.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image30.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image30.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image31.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image31.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->    
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image32.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image32.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                         
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image33.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image33.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image34.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image34.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image35.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image35.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->    
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image36.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image36.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                         
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image37.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image37.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image38.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image38.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image39.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image39.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->    
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image40.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image40.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                         
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="portfolio-item col-md-4 col-sm-12"></div>
+                    <div class="portfolio-item col-md-4 col-sm-12">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/image41.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/image41.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-4 col-sm-12"></div>                   
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#portfolio -->  
+<!-- /#OS-installation-->
+
+<!-- /#our-team --> 
+        <div class="content-section" id="our-team" style="margin-top:100px">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Our Team</h2>
+                        <p>Get to know our people and group</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="team-member col-md-3 col-sm-6">
+                        <div class="member-thumb">
+                            <img src="images/member1.jpg" alt="">
+                            <div class="team-overlay">
+                                <h3>Koirala Pankaj</h3>
+                                <span>Designer & Developer</span>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/punkey.ko" class="fa fa-facebook" target="_blank"></a></li>
+                                    <li><a href="https://twitter.com/gorkhaspunks" class="fa fa-twitter" target="_blank"></a></li>
+                                    <li><a href="https://www.linkedin.com/" class="fa fa-linkedin" target="_blank"></a></li>
+                                </ul>
+                            </div> <!-- /.team-overlay -->
+                        </div> <!-- /.member-thumb -->
+                    </div> <!-- /.team-member -->
+                    <div class="team-member col-md-3 col-sm-6">
+                        <div class="member-thumb">
+                            <img src="images/member2.jpg" alt="">
+                            <div class="team-overlay">
+                                <h3>Giri Avharika</h3>
+                                <span>Developer</span>
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/aava.rica" class="fa fa-facebook" target="_blank"></a></li>
+                                    <li><a href="https://twitter.com/aavarica" class="fa fa-twitter" target="_blank"></a></li>
+                                    <li><a href="https://np.linkedin.com/in/abharika-giri-659a764b" class="fa fa-linkedin" target="_blank"></a></li>
+                                </ul>
+                            </div> <!-- /.team-overlay -->
+                        </div> <!-- /.member-thumb -->
+                    </div> <!-- /.team-member -->
+                    <div class="team-member col-md-3 col-sm-6">
+                        <div class="member-thumb">
+                            <img src="images/member3.jpg" alt="">
+                            <div class="team-overlay">
+                                <h3>Shrestha Deshant</h3>
+                                <span>Designer</span>
+                                <ul class="social">
+                                    <li><a href="#" class="fa fa-facebook" target="_blank"></a></li>
+                                    <li><a href="#" class="fa fa-twitter" target="_blank"></a></li>
+                                    <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li>
+                                </ul>
+                            </div> <!-- /.team-overlay -->
+                        </div> <!-- /.member-thumb -->
+                    </div> <!-- /.team-member -->
+                    <div class="team-member col-md-3 col-sm-6">
+                        <div class="member-thumb">
+                            <img src="images/member4.jpg" alt="">
+                            <div class="team-overlay">
+                                <h3>Yangchong Karma</h3>
+                                <span>Designer</span>
+                                <ul class="social">
+                                    <li><a href="https://m.facebook.com/yangchong.gurung" class="fa fa-facebook" target="_blank"></a></li>
+                                    <li><a href="https://twitter.com/YangchongG" class="fa fa-twitter" target="_blank"></a></li>
+                                    <li><a href="https://www.linkedin.com/in/karma-yangchong-gurung-5748b0124" class="fa fa-linkedin" target="_blank"></a></li>
+                                </ul>
+                            </div> <!-- /.team-overlay -->
+                        </div> <!-- /.member-thumb -->
+                    </div> <!-- /.team-member -->
+                </div> <!-- /.row -->
+                <div class="row" style="padding-top:50px">
+                    <div class="col-md-12 text-center">
+                        <div class="skills-heading">
+                            <h3 class="skills-title">Our skills and member's contribution</h3>                            
+                        </div>
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-8 col-sm-6">
+                        <p>Prior to starting the project our group was formed. As the week progressed, we decided on the topic VirtualBox. Each members contributed equally on the field that we were capable of.</p>
+                       <ul style="text-align:justify;padding-left:30px">
+                            <li style="text-decoration:underline">Abharika Giri</li>
+                                <p>Abharika giri was the person responisble for the research of the introduction of the VirtualBox along with testing of the VirtualBox. She contributed on the coding of the website and editing the content on the website. one was also responsible for the group report as well.</p>
+                            <li style="text-decoration:underline">Deshant Shrestha</li>
+                                <p>Deshant shrestha was responsible for the research of the history of the VirtualBox. He also contributed on making of the presentation slides along with creation of logo for the website. He compiled meeting and gantt chart as well.</p>
+                            <li style="text-decoration:underline">Karma Yangchong Gurung</li>
+                                <p>Karma Yangchong Gurung was responsible for conducting the meetings among the group members. She also researched about where and by whom VirtualBox was made along with compilation of meeting minute. She was also responsible for the group report, installation of the VirtualBox and creation of logo.</p>
+                            <li style="text-decoration:underline">Pankaj Koirala</li>
+                                <p>Pankaj Koirala was responsible for selection of the topic and research on the topic VirtualBox. He contributed on the coding of the website along with designing and content editing. He was also responsible for the testing of the VirtualBox and creation of the final group report.</p>
+                       </ul>                        
+                    </div> <!-- /.col-md-8 -->
+                    <div class="col-md-4 col-sm-6" style="padding-top:110px">
+                        <ul class="progess-bars">
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">Photoshop 40%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">HTML 60%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">CSS 50%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">Designing & Other 80%</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- /.col-md-4 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div>
+<!-- /#our-team -->
+
+<!-- /#proof -->
+        <div class="content-section" id="proof" style="margin-top:100px">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Proof</h2>
+                        <p>Meeting minutes and Gantt chart</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                <div class="row"  style="padding-top:70px">
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/gantt.png" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Gantt Chart</h3>
+                                <p>Graphical presentation of meetings and agendas.</p>
+                                <a href="images/gallery/gantt.png" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/meeting1.png" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Meeting - 1</h3>
+                                <p>First meeting was held on 13th July 2016, in Brit House.</p>
+                                <a href="images/gallery/meeting1.png" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/meeting2.png" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Meeting - 2</h3>
+                                <p>Second meeting was held on 1st August 2016, in Brit House.</p>
+                                <a href="images/gallery/meeting2.png" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->  
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/meeting3.png" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Meeting - 3</h3>
+                                <p>Third meeting was held on 19th July 2016, in Brit House.</p>
+                                <a href="images/gallery/meeting3.png" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->   
+                    <div class="row"  style="padding-top:70px">
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/meeting-1.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Meeting - 1</h3>
+                                <p>First meeting was held on 13th July 2016, in Brit House.</p>
+                                <a href="images/gallery/meeting-1.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/meeting-2.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Meeting - 2</h3>
+                                <p>Second meeting was held on 1st August 2016, in Brit House.</p>
+                                <a href="images/gallery/meeting-2.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item --> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/meeting-3.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Meeting - 3</h3>
+                                <p>Third meeting was held on 19th July 2016, in Brit House.</p>
+                                <a href="images/gallery/meeting-3.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->  
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/meeting-4.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Meeting - 4</h3>
+                                <p>Fourth meeting was held on 11th August 2016, in Open Access.</p>                                
+                                <a href="images/gallery/meeting-4.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->                              
+                </div> <!-- /.row -->                
+            </div> <!-- /.container -->
+        </div> <!-- /#portfolio --> 
+<!-- /#proof -->    
+
+<!-- /#/#external links -->
+        <div class="content-section" id="external" style="padding-top:100px">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Links</h2>
+                        <p>External download links.</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->            
+            <div class="row">                
+                <div class="col-md-12 col-sm-12">                  
+                    <ul style="padding-left: 20px; ">
+                        <h1 style="color:blue;"> VirtualBox </h1> 
+                        <li>
+                            <p>
+                            <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">https://www.virtualbox.org/wiki/Downloads</a>
+                            </p>
+                        </li>
+                        <h1 style="color:blue;"> Operating System's </h1> 
+                        <li>
+                            <p>
+                            <a href="http://www.osboxes.org/virtualbox-images/" target="_blank">http://www.osboxes.org/virtualbox-images/</a>
+                            </p>
+                        </li>
+                        <h1 style="color:blue;"> Developer Forum </h1> 
+                        <li>
+                            <p>
+                            <a href="https://www.virtualbox.org/wiki/VirtualBox_PUEL" target="_blank">https://www.virtualbox.org/wiki/VirtualBox_PUEL</a>
+                            </p>
+                        </li>                       
+                    </ul>   
+            </div>
+        </div>
+<!-- /#external links -->
+
+<!-- /#refrences -->
+        <div class="content-section" id="refrences" style="padding-top:100px">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Refrences</h2>
+                        <p>Our work reference, Citation and Biblography</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->            
+            <div class="row">                
+                <div class="col-md-12 col-sm-12">
+                    <h1 style="color:blue; text-decoration:underline">Refrences</h1><br/>    
+                </div>              
+                <div class="col-md-12 col-sm-12">  
+                    <ul style="list-style: circle;padding-left: 20px; ">
+                        <li>
+                            <p>
+                            Oracle. (n.d.) Chapter 1. First steps [Online]. Available from: <a href="https://www.virtualbox.org/manual/ch01.html">https://www.virtualbox.org/manual/ch01.html</a> [Accessed 07 August 2016].
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                            Oracle. (n.d.) News – Oracle VM VirtualBox [Online]. Available from: <a href="https://www.virtualbox.org/wiki/News">https://www.virtualbox.org/wiki/News</a> [Accessed 7 August 2016].
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                            Oracle. (n.d.) VirtualBox_PUEL – Oracle VM VirtualBox [Online]. Available from: <a href="https://www.virtualbox.org/wiki/VirtualBox_PUEL">https://www.virtualbox.org/wiki/VirtualBox_PUEL</a> [Accessed 7 August 2016].
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                            Rouse, M. (2014) What is Type 2 hypervisor (hosted hypervisor)? - Definition from WhatIs.com [Online]. Available from: <a href="http://searchservervirtualization.techtarget.com/definition/hosted-hypervisor-Type-2-hypervisor">http://searchservervirtualization.techtarget.com/definition/hosted-hypervisor-Type-2-hypervisor</a> [Accessed 7 August 2016].
+                            </p>
+                        </li>
+                        <li>
+                            Burger, T. (2012) The Advantages of Using Virtualization Technology in the Enterprise | Intel® Software [Online]. Available from: <a href="https://software.intel.com/en-us/articles/the-advantages-of-using-virtualization-technology-in-the-enterprise">https://software.intel.com/en-us/articles/the-advantages-of-using-virtualization-technology-in-the-enterprise</a> [Accessed 8 August 2016].
+                        </li>
+                    </ul>                  
+                </div>                  
+                <div class="col-md-12 col-sm-12" style="padding-top: 20px ">
+                    <h1 style="color:blue; text-decoration:underline">Works Cited</h1><br/> 
+                </div>              
+                <div class="col-md-12 col-sm-12"> 
+                    <ul style="list-style: circle;padding-left: 20px; ">
+                        <li>
+                            <p>
+                            Pronto Marketing. (2014) Why choose virtualization? [Online]. Available from: <a href="https://www.techadvisory.org/2014/05/why-choose-virtualization/">https://www.techadvisory.org/2014/05/why-choose-virtualization/</a> [Accessed 8 July 2016].
+                            </p>
+                        </li>
+                    </ul>                     
+                </div> 
+            </div>
+        </div>
+<!-- /#refrences -->
+
+<!-- /#contact -->
+        <div class="content-section" id="contact" style="margin-top:100px">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Contact</h2>
+                        <p>Send a message to us</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-12">
+                       <div class="googlemap-wrapper">
+                            <div id="map_canvas" class="map-canvas"></div>
+                        </div> <!-- /.googlemap-wrapper -->
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-7 col-sm-6">
+                        <p>
+                    	</p>
+                        <ul class="contact-info">
+                            <li>Phone: 9841-52-58-33</li>
+                            <li>Email: <a href="sity1c116039@islingtoncollege.edu.np">grouptwo@islingtoncollege.edu.np</a></li>
+                            <li>Address: Kamalpokhari, Kathmandu, Nepal</li>
+                        </ul>
+                        <!-- spacing for mobile viewing --><br><br>
+                    </div> <!-- /.col-md-7 -->
+                    <div class="col-md-5 col-sm-6">
+                        <div class="contact-form">
+                            <form method="post" name="contactform" id="contactform">
+                                <p>
+                                    <input name="name" type="text" id="name" placeholder="Your Name">
+                                </p>
+                                <p>
+                                    <input name="email" type="text" id="email" placeholder="Your Email"> 
+                                </p>
+                                <p>
+                                    <input name="subject" type="text" id="subject" placeholder="Subject"> 
+                                </p>
+                                <p>
+                                    <textarea name="comments" id="comments" placeholder="Message"></textarea>    
+                                </p>
+                                <input type="submit" class="mainBtn" id="submit" value="Send Message">
+                            </form>
+                        </div> <!-- /.contact-form -->
+                    </div> <!-- /.col-md-5 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#contact -->
+<!-- /#contact -->
+
+<!-- /#footer -->            
+        <div id="footer" style="margin-top:100px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-xs-12 text-left" style="text-align: center; ">
+                        <span>Copyright &copy; 2016 playsof Inc</span></br>
+                        <span>Islington College,Kathmandu,Nepal</span></br>
+                        <span>Study Skills(2nd Sem, Group-2)</span></br>                        
+                        <span>Koirala Pankaj, Gurung Yangchong Karma, Giri Abharika, Shrestha Deshant</span>
+                  </div> <!-- /.text-center -->
+                    <div class="col-md-4 hidden-xs text-right">
+                        <a href="#top" id="go-top">Back to top</a>
+                    </div> <!-- /.text-center -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div>
+ <!-- /#footer -->
+        
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Map -->
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="js/vendor/jquery.gmap3.min.js"></script>
+        
+        <!-- Google Map Init-->
+        <script type="text/javascript">
+            jQuery(function($){
+                $('#map_canvas').gmap3({
+                    marker:{
+                        address: '37.769725, -122.462154' 
+                    },
+                        map:{
+                        options:{
+                        zoom: 15,
+                        scrollwheel: false,
+                        streetViewControl : true
+                        }
+                    }
+                });
+
+                /* Simulate hover on iPad
+                 * http://stackoverflow.com/questions/2851663/how-do-i-simulate-a-hover-with-a-touch-in-touch-enabled-browsers
+                 --------------------------------------------------------------------------------------------------------------*/ 
+                $('body').bind('touchstart', function() {});
+            });
+        </script>        
+        <!-- templatemo 406 flex -->
+    </body>
+</html>
